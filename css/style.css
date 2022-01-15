@@ -44,6 +44,9 @@ img {
      top: 0;
      left: 0;
      width: 100%;
+     background-color: rgba(21, 24, 36, 0.5);
+     z-index: 5;
+        
 }
 .wrapper {
      max-width: 1060px;
@@ -67,12 +70,14 @@ img {
 }
 /*Header styles start*/
 
+
 .header__wrapper {
      display: flex;
      flex-wrap: wrap;
      align-items: flex-end;
      justify-content: space-between;
-     padding-top: 56px;
+     padding-top: 20px;
+     padding-bottom: 23px;
 }
 
 .header__list {
@@ -108,6 +113,7 @@ img {
      background: url(/img/intro_bg.png) no-repeat center;
      background-size: cover;
      padding-top: 263px;
+     padding-bottom: 223px;
 }
 
 .intro__title {
@@ -192,7 +198,6 @@ img {
 
 .benefits__title {
      width: 100%;
-     
      font-style: normal;
      font-weight: 500;
      font-size: 35px;
@@ -264,6 +269,10 @@ img {
 
 /*Places style start*/
 
+.places{
+     margin-bottom: 131px;
+}
+
 .places__title {
      margin-right: 15px;
 }
@@ -303,7 +312,6 @@ img {
 
 
 .places__card-pic {
-
      width: 100%;
      object-fit: 0.5s all;
 }
@@ -361,10 +369,157 @@ img {
 }
 
 .places__card-pic-size-sm {
-     height: 354px;
+     height: 283px;
      object-fit: cover;
 }
 
 .places__card_size_sm {
      grid-column: span 2;
 }
+
+/*Places style end*/
+
+/*Tour style start*/
+
+.tours {
+     margin-bottom: 139px;
+}
+
+
+ @media (min-width: 720px ){
+     .tours__tour {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 77px 108px;
+     }
+ }
+
+.tour__info {
+     display: inline-flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+     padding-left: 47px;
+}
+
+.tour__title {
+     padding-top: 30px;
+     font-weight: 500;
+     font-size: 30px;
+     line-height: 40px;
+     color: #102746;
+}
+
+.tour__desc {
+     padding-right: 43px;
+     font-size: 16px;
+     line-height: 24px;
+     color: #102746;
+}
+
+.tour__more {
+     font-size: 16px;
+     line-height: 24px;
+     color: #006DFE;
+     padding-right: 59px;
+     background: url(/img/svg/Shape.svg) no-repeat 95% center;
+     transition: 0.5s all;
+}
+
+.tour__more:hover, .tour__more:focus {
+     background: url(/img/svg/Shape.svg) no-repeat right center;
+}
+
+
+/*Tour style end*/
+
+
+/*Today style start*/
+.today{
+     margin-bottom: 86px;
+}
+
+.today__title{
+     margin-bottom: 54px;
+}
+
+.today__cards{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(386px, 386px));
+     grid-gap: 52px;    
+}
+
+.today__card-pic{
+     position: relative;
+     margin-bottom: 45px;
+}
+
+.today__card-stats{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: end;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background: rgba(21, 24, 36, 0.6);
+     width: 100%;     
+}
+
+.today__card-title{
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 24px;
+     color: #FFFFFF;
+     padding: 15px 25px;
+     margin: 0 auto 0 0;
+}
+
+.today__card-likes{
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: white;
+     padding-right: 20px;
+     background: url(/img/svg/heart_icon.svg) no-repeat right center;
+}
+
+.today__card-comments{
+
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: white;
+     padding-right: 23px;
+     background: url(/img/svg/comment_icon.svg) no-repeat right center;
+     margin-right:25px;
+     margin-left: 14px;
+}
+
+.today__card-desk{
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+     color: #102746;
+     margin-bottom: 31px;
+}
+
+.today__card-more{
+     width: 118px;
+     padding: 12px 19px;
+     background-color: #006DFE;
+     color: white;
+     font-size: 16px;
+     text-decoration: none;
+     margin: auto 0 0 0;
+}
+
+.today__card-more:hover, .today__card-more:active, .today__card-more:focus{
+     background-color: #055dd2;
+}
+
+.today__card{
+     display: flex;
+     flex-direction: column;
+}
+/*Today style end*/
